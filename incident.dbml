@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ossimob" Class="incidentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=bpd-rms-db;Initial Catalog=ossimob;Integrated Security=True" SettingsObjectName="One_Solution_Mobile.My.MySettings" SettingsPropertyName="ossimobConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.lwmain" Member="lwmains">
+    <Type Name="lwmain">
+      <Column Name="inci_id" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="agency" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="offense" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="complete" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="date_rept" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="streetnbr" Type="System.String" DbType="Char(8) NOT NULL" CanBeNull="false" />
+      <Column Name="streetdir" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="street" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="apt_flr" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="city" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="state" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="zip" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="reportedas" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="hour_rept" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="date_occu" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="hour_occu" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="dow1" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="date_fnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="hour_fnd" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="dow2" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="tract" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="zone" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="district" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="reportarea" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="neighborhd" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="subdivisn" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="weather" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="premise" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="forcible" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="weapon" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="weaponauto" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="hatebias" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="category1" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="category2" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="name_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="offcr_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="emunit" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="emdivision" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="emsection" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="emshift" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="asst_offcr" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="supervisor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="recreview" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="csstatus" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="csstatusdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dispostn" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="datedispos" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="narrative1" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="supplement" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="investigtr" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="invststats" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="investunit" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="geox" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="geoy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="lwnameflag" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="domestic" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="storagea" Type="System.String" DbType="Char(8) NOT NULL" CanBeNull="false" />
+      <Column Name="storageb" Type="System.String" DbType="Char(8) NOT NULL" CanBeNull="false" />
+      <Column Name="creserve1" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="nreserve1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="lwgrant" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="seculevel" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="sysflag" Type="System.String" DbType="Char(8) NOT NULL" CanBeNull="false" />
+      <Column Name="addtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="adduser" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="addconsole" Type="System.String" DbType="Char(8) NOT NULL" CanBeNull="false" />
+      <Column Name="yearstamp" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="monthstamp" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="oldcasenbr" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="exacestm" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="lightcond" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="lwcircum" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="creserve2" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="creserve3" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="labseized" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="gangrelat" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="ibr_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ibr_resend" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="reg_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="reg_resend" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="rollcall" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="schoolyr" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="locacode" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="locadesc" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="locaphone" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="buildarea" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="persinvst" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="polijuris" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="assoccode" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="locatype" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="schooltyp" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="falsealrm" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="injurdesc" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="truancrel" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="drugtype" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="hrsrept" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="hrsnotdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="hrsnotby" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sparrace" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="sparsex" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="sparage" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="reccheck" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="recperinvs" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="recadmrev" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="pedinj" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="regioncode" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="plantsecu" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="saorefdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="eeoadate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="offcrasslt" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="perinvrej" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="eeeorej" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="persuadrej" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="spardate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="sparcaseid" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="sparweap" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="sparhrsby" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="race" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="sex" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="cleryloc" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="followup" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="occdtunk" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="lwmainid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="mobnamekey" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="mobilekey" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="mobilepkey" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="mobstatus" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="mobstby" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="mobstdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="mobileflag" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="mobileid" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="moblastrev" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="mobnotes" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="mobunitid" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="mobsupgrp" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="supervsr2" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="mobstdate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="suprevlvl" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="clerytyp" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="entry1" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="exit1" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="safecode" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
